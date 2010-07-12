@@ -12,6 +12,8 @@ user leaves the field by clicking somewhere else the hint text reappears.
 Requirements
 ---
   * jQuery - probably any version but I've only tested with 1.4.1
+
+I've tested (manually) in Firefox 3, Safari 4, Chrome 5, & IE 7.
   
 Installation
 ---
@@ -21,17 +23,21 @@ Installation
         <script src="/javascripts/jquery-1.4.1.js" type="text/javascript"></script>
         <script src="/javascripts/jquery.hintify.js" type="text/javascript"></script>
 
-2. Wire it up with something like this:
+2. Add hints using the data-hint-text attribute:
+
+        <input type="text" name="city[name]" data-hint-text="Phoenix" />
+        <input type="text" name="city[population]" data-hint-text="20 million" />
+
+
+3. Wire it up with something like this:
 
         $(document).ready(function(){
           $('input[data-hint-text]').addClass('hinter');
           $('.hinter').hintify();
         });
 
-3. Add hints using the data-hint-text attribute:
-
-        <input type="text" name="city[name]" data-hint-text="Phoenix" />
-        <input type="text" name="city[population]" data-hint-text="20 million" />
+You could call the hintify() method on the selector directly but I always want class
+for CSS anyway which brings us to step 4.
 
 4. (Optional) You probably want to gray out the hint text with some CSS:
 
