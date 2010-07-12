@@ -23,10 +23,10 @@ Installation
 
 2. Wire it up with something like this:
 
-    $(document).ready(function(){
-        $('input[data-hint-text]').addClass('hinter');
-        $('.hinter').hintify();
-    });
+        $(document).ready(function(){
+            $('input[data-hint-text]').addClass('hinter');
+            $('.hinter').hintify();
+        });
 
 3. Add hints using the data-hint-text attribute:
 
