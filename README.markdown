@@ -13,7 +13,8 @@ Requirements
 ---
   * jQuery - probably any version but I've only tested with 1.4.1
 
-I've tested (manually) in Firefox 3, Safari 4, Chrome 5, & IE 7.
+I've tested (manually) in Firefox 3, Safari 4, Chrome 5, & IE 7.  It is pretty
+simple so I expect it to work in all browsers.
   
 Installation
 ---
