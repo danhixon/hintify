@@ -29,16 +29,12 @@ Installation
         <input type="text" name="city[name]" data-hint-text="Phoenix" />
         <input type="text" name="city[population]" data-hint-text="20 million" />
 
-
 3. Wire it up with something like this:
 
         $(document).ready(function(){
           $('input[data-hint-text]').addClass('hinter');
           $('.hinter').hintify();
         });
-
-You could call the hintify() method on the selector directly but I always want class
-for CSS anyway which brings us to step 4.
 
 4. (Optional) You probably want to gray out the hint text with some CSS:
 
