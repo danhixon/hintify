@@ -34,3 +34,8 @@ jQuery.fn.hintify = function()
 	   }
 	}).blur();
 };
+
+jQuery(document).ready(function(){
+   $('input[data-hint-text],textarea[data-hint-text]').addClass('hinter');
+   $('.hinter').hintify();
+});
